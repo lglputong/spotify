@@ -1,0 +1,10 @@
+<h1>All Moods</h1>
+<% @moods.each do |m| %>
+	<p>
+		<h3> <%= m.name %> </h3>
+		<%= link_to "Show", mood_path(m.id) %>
+		<%= link_to "Edit", edit_mood_path(m.id) %>
+		<%= button_to "Delete", mood_path(m.id), :method => :delete, :class => "delete", :confirm => "Are you sure?" %>
+	</p>
+<% end %>
+<%= link_to "Add a Mood", new_mood_path %>

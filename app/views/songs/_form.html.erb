@@ -1,0 +1,10 @@
+<%= simple_form_for @song do |f| %>
+	<%= f.input :title %>
+	<%= f.input :artist %>
+	<%= f.input :album %>
+	<%= f.input :album_art, placeholder: 'Paste image URL' %>
+	<%= f.input :song_mood %>
+	<%= f.input :listen, placeholder: 'Paste YouTube/song URL' %>
+	<%= f.button :submit %>
+<% end %>
+* - required

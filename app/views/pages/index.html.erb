@@ -1,0 +1,5 @@
+<h1>Welcome to Spawteafy</h1>
+<% @songs.each do |s| %>
+	<p><h2><a href = <%= s.listen %> ><%= s.title %> </a></h2></p>
+<% end %>
+<%= link_to "All Songs", songs_path %>

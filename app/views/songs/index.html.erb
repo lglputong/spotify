@@ -1,0 +1,11 @@
+<h1>All Songs</h1>
+<% @songs.each do |s| %>
+	<p>
+		<img src = <%= s.album_art %>, height = 200px, width = 200px>
+		<h3> <a href = <%= s.listen %> ><%= s.title %> </a> </h3>
+		<%= link_to "Details", song_path(s.id) %>
+		<%= link_to "Edit", edit_song_path(s.id) %>
+		<%= button_to "Delete", song_path(s.id), :method => :delete, :class => "delete", :confirm => "Are you sure?" %>
+	</p>
+<% end %>
+<%= link_to "Add a Song", new_song_path %>
