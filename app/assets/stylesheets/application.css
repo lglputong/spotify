@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+.home { 
+	
+	background: url(http://wallpoper.com/images/00/36/45/90/horizon_00364590.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  width: 100%	;
+  text-align: center;
+}
+
+.title {
+	color: #ffffff;
+}
+
+.whatever {
+	height: 200px;
+	width: 75%;
+	margin: auto;
+	padding: 25px;
+}
+
+.whatever div {
+	display: inline-block;
+	padding: 25px;
+}
+
+.whatever a:hover{
+	color: #ffffff;
+}
+
+.homebuttons {
+	height: 75px;
+	margin: auto;
+}
+
+.homebuttons div {
+	display: inline-block;
+	padding: 15px;
+	border: solid;
+	border-width: 2px;
+	border-color: #FFFFFF;
+	font-size: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #EB6F17;
+}
+
+.homebuttons div a{
+	color: #BFBBB8;
+}
+
+body {
+	background-color: #545352;
+}
+
+h1 {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 48px;
+}

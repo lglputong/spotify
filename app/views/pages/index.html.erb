@@ -1,5 +1,26 @@
-<h1>Welcome to Spawteafy</h1>
-<% @songs.each do |s| %>
-	<p><h2><a href = <%= s.listen %> ><%= s.title %> </a></h2></p>
-<% end %>
-<%= link_to "All Songs", songs_path %>
+<!DOCTYPE html>
+<html>
+<head>
+	<%= stylesheet_link_tag "application", :media => "all" %>
+</head>
+<body class="home">
+	<h1 class="title">Welcome to Moodie: Where your songs reflect you!</h1>
+	<div class = "whatever">
+		<% @songs.each do |s| %>
+		<div>
+			<img src = <%= s.album_art %> height = 150px, width = 150px> <br>
+			<h3><a href = <%= s.listen %> ><%= s.title %> </a></h3>
+		</div>
+	<% end %>
+	</div>
+	<br>
+	<div class = "homebuttons">
+		<div>
+		<%= link_to "All Songs", songs_path %>
+		</div>
+		<div>
+		<%= link_to "All Moods", moods_path %>
+		</div>
+	</div>
+</body>
+</html>
